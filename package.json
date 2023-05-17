@@ -1,0 +1,27 @@
+{
+  "name": "@cloudwell/process-args",
+  "version": "1.0.1",
+  "description": "A dependency free, lightweight, and flexible, utility function to simplify working with process arguments.",
+  "main": "index.js",
+  "readme": "README.md",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && mkdir dist && cp src/index.js package.json README.md dist",
+    "publish": "npm run build && npm publish ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cloudwell-IO/process-args.git"
+  },
+  "author": "Cloudwell",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Cloudwell-IO/process-args/issues"
+  },
+  "homepage": "https://github.com/Cloudwell-IO/process-args#readme",
+  "keywords": []
+}
